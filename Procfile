@@ -1,0 +1,1 @@
+web: gunicorn SmartTeaPants.wsgi --log-file -
