@@ -20,3 +20,6 @@ It also advertises a couple times a week
 * refactor
 * Hey, works on my box.
 * make a script to do initial set up of training data.
+
+# This Django app wont run on your box as-is
+you'll have to provide your own authentication keys. I'll make documentation eventually. Its not ready yet in any case.
