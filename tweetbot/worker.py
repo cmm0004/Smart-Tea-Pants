@@ -104,7 +104,13 @@ def main():
                 print(e)
                 print("favorite failed on status: " + str(status.id))
                 print(datetime.datetime.now())
-
+        # try:
+        #     for status in statuses:
+        #         if status.text.find('What up?'):
+        #             TWITTER_BOT.update_status(status="@" + status.user.screen_name + " Holla!")
+        # except tweepy.TweepError as e:
+        #     print(e)
+        #     print('failed to hollaback.')
         ####
         # advertise individual twice a week
         ####
@@ -134,14 +140,14 @@ def main():
         # if its friday,
         # and we havent already done it:
 
-        if (wda.today_int == 4) and (not did_ff):
-            followers.ff_tweet(wda=wda)
-            did_ff = True
-        #reset if we've done ff on a non-friday
-        #so it will be ready next week
-        elif wda.today_int != 4:
-            did_ff = False
-        ## done, wait and go again.
+        # if (wda.today_int == 4) and (not did_ff):
+        #     followers.ff_tweet(wda=wda)
+        #     did_ff = True
+        # #reset if we've done ff on a non-friday
+        # #so it will be ready next week
+        # elif wda.today_int != 4:
+        #     did_ff = False
+        # ## done, wait and go again.
         print('done')
         time.sleep(1800)    
 
